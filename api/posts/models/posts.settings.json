@@ -52,6 +52,10 @@
       "required": true,
       "maxLength": 150,
       "minLength": 50
+    },
+    "seo": {
+      "type": "text",
+      "required": true
     }
   }
 }
