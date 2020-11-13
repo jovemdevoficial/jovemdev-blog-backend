@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "Authors",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "profile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "social_networks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "network.social-networks",
+      "required": true
+    },
+    "biography": {
+      "type": "text",
+      "required": true
+    },
+    "posts": {
+      "via": "authors",
+      "collection": "posts"
+    }
+  }
+}

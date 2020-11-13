@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_network_social_networks",
+  "info": {
+    "name": "Social Networks",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "github": {
+      "type": "string",
+      "default": "https://github.com/"
+    },
+    "twitter": {
+      "type": "string",
+      "default": "https://twitter.com/"
+    },
+    "facebook": {
+      "type": "string",
+      "default": "https://www.facebook.com/"
+    },
+    "linkedin": {
+      "type": "string",
+      "default": "https://www.linkedin.com/"
+    }
+  }
+}
