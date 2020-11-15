@@ -19,7 +19,7 @@
       "type": "email",
       "required": true
     },
-    "profile": {
+    "avatar": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -39,8 +39,8 @@
       "required": true
     },
     "posts": {
-      "via": "authors",
-      "collection": "posts"
+      "collection": "posts",
+      "via": "authors"
     }
   }
 }

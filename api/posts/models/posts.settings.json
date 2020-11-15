@@ -29,8 +29,8 @@
       "required": true
     },
     "authors": {
-      "collection": "authors",
       "via": "posts",
+      "collection": "authors",
       "dominant": true
     },
     "category": {
