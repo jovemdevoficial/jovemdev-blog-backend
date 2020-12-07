@@ -2,25 +2,35 @@
   "collectionName": "components_network_social_networks",
   "info": {
     "name": "Social Networks",
-    "icon": "users"
+    "icon": "users",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "github": {
       "type": "string",
-      "default": "https://github.com/"
+      "default": "https://github.com/",
+      "required": true
     },
     "twitter": {
       "type": "string",
-      "default": "https://twitter.com/"
+      "default": "https://twitter.com/",
+      "required": true
     },
     "facebook": {
       "type": "string",
-      "default": "https://www.facebook.com/"
+      "default": "https://www.facebook.com/",
+      "required": true
     },
     "linkedin": {
       "type": "string",
-      "default": "https://www.linkedin.com/"
+      "default": "https://www.linkedin.com/",
+      "required": true
+    },
+    "instagram": {
+      "type": "string",
+      "default": "https://www.instagram.com/",
+      "required": true
     }
   }
 }

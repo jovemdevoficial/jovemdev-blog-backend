@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tags",
   "info": {
-    "name": "Tags"
+    "name": "Tags",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,6 +20,11 @@
     "posts": {
       "via": "tags",
       "collection": "posts"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }

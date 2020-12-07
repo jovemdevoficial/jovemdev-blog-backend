@@ -21,6 +21,11 @@
     "posts": {
       "via": "category",
       "collection": "posts"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }

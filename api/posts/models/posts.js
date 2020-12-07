@@ -3,7 +3,6 @@
 const index = 'JOVEMDEV';
 
 module.exports = {
-  /*
   lifecycles: {
     afterUpdate(result, params, data) {
       if (result.published_at) {
@@ -16,5 +15,4 @@ module.exports = {
       strapi.services.algolia.deleteObject(result.id, index);
     },
   },
-  */
 };

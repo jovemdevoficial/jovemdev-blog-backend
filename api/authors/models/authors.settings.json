@@ -39,8 +39,13 @@
       "required": true
     },
     "posts": {
-      "collection": "posts",
-      "via": "authors"
+      "via": "authors",
+      "collection": "posts"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }

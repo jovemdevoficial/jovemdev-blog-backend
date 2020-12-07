@@ -13,7 +13,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 60
     },
     "cover": {
       "model": "file",
@@ -29,8 +30,8 @@
       "required": true
     },
     "authors": {
-      "via": "posts",
       "collection": "authors",
+      "via": "posts",
       "dominant": true
     },
     "category": {
@@ -50,7 +51,7 @@
     "description": {
       "type": "text",
       "required": true,
-      "maxLength": 150,
+      "maxLength": 154,
       "minLength": 50
     },
     "seo": {
