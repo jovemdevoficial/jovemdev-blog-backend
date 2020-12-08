@@ -3,14 +3,15 @@
 const index = 'JOVEMDEV';
 const axios = require('axios');
 
-module.exports = ({ env }) => ({
+module.exports = {
   lifecycles: {
     async afterCreate(result, data) {
-      axios.post(env('VERCEL_HOOK_URL'));
+      console.log('https://api.vercel.com/v1/integrations/deploy/prj_ZUGGed9Telrvb4RYYq9ciAwf55Dq/GDGDrRWNA5')
+      axios.post('https://api.vercel.com/v1/integrations/deploy/prj_ZUGGed9Telrvb4RYYq9ciAwf55Dq/GDGDrRWNA5');
     },
     async afterUpdate(result, params, data) {
-      axios.post(env('VERCEL_HOOK_URL'));
-      
+      axios.post('https://api.vercel.com/v1/integrations/deploy/prj_ZUGGed9Telrvb4RYYq9ciAwf55Dq/GDGDrRWNA5');
+
       if (result.published_at) {
         strapi.services.algolia.saveObject(result, index);
       } else {
@@ -21,4 +22,4 @@ module.exports = ({ env }) => ({
       strapi.services.algolia.deleteObject(result.id, index);
     },
   },
-});
+};
