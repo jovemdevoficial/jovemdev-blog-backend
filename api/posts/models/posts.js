@@ -6,7 +6,6 @@ const axios = require('axios');
 module.exports = {
   lifecycles: {
     async afterCreate(result, data) {
-      console.log('https://api.vercel.com/v1/integrations/deploy/prj_ZUGGed9Telrvb4RYYq9ciAwf55Dq/GDGDrRWNA5')
       axios.post('https://api.vercel.com/v1/integrations/deploy/prj_ZUGGed9Telrvb4RYYq9ciAwf55Dq/GDGDrRWNA5');
     },
     async afterUpdate(result, params, data) {
@@ -19,6 +18,8 @@ module.exports = {
       }
     },
     async afterDelete(result, params) {
+      axios.post('https://api.vercel.com/v1/integrations/deploy/prj_ZUGGed9Telrvb4RYYq9ciAwf55Dq/GDGDrRWNA5');
+      
       strapi.services.algolia.deleteObject(result.id, index);
     },
   },
